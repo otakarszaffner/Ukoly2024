@@ -15,10 +15,9 @@ def soucin(cisla: list[int]) -> int:
 
 def prumer(cisla: list[int]) -> float:
   soucet = 0
-  pocet = 0
-  for i in range(len(cisla)):
+  pocet = len(cisla)
+  for i in range(pocet):
     soucet += cisla[i]
-    pocet += 1
   prum = float(soucet/pocet)
   
   return prum
